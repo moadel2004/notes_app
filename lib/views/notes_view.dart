@@ -16,12 +16,21 @@ class NotesView extends StatelessWidget {
               borderRadius: BorderRadius.circular(32),
             ),
             context: context,
+            isScrollControlled: true,
+
             builder: (context) {
-              return AddNoteBottom();
+              return Padding(
+                // ✅ padding علشان يرفعها فوق الكيبورد
+                padding: EdgeInsets.only(
+                  bottom: MediaQuery.of(context).viewInsets.bottom,
+                ),
+                child: const AddNoteBottom(),
+              );
             },
           );
         },
         backgroundColor: const Color.fromARGB(255, 98, 183, 252),
+
         child: Icon(Icons.add),
       ),
       body: const NotesViewbody(),
