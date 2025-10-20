@@ -5,6 +5,6 @@ class AddNoteBottom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(color: Colors.black);
+    return Container();
   }
 }
