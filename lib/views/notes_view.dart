@@ -24,7 +24,7 @@ class NotesView extends StatelessWidget {
                 padding: EdgeInsets.only(
                   bottom: MediaQuery.of(context).viewInsets.bottom,
                 ),
-                child: const AddNoteBottom(),
+                child: AddNoteBottom(),
               );
             },
           );
