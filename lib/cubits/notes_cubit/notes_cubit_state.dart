@@ -10,7 +10,7 @@ final class NotesCubitLoading extends NotesCubitState {}
 final class NotesCubitSuccess extends NotesCubitState {
   final List<NoteModel> notes;
 
-  NotesCubitSuccess({required this.notes});
+  NotesCubitSuccess(this.notes);
 }
 
 final class NotesCubitFailure extends NotesCubitState {
